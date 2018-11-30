@@ -4,10 +4,13 @@ import './App.css';
 
 class App extends Component {
   
-
   render() {
     return (
-      <QuoteBox />
+      <div className="App">
+        <QuoteBox className='quote-box' />
+          
+
+      </div>
     );
   }
 }

@@ -16,10 +16,10 @@ class QuoteBox extends Component {
   	  		Hi there im a new quote box. 
   	  	</div>
   	  	<div id='author'>
-  	  		Harry Zhang is a placeholder for now.
+  	  		Harry Zhang 
   	  	</div>
-  	  	
-
+  	  	<button className ='tweet-button' type='button' title="Tweet this quote!">
+  	  	</button>
 
   	  </div>
 
