@@ -9,6 +9,14 @@ class QuoteBox extends Component {
 	}
   }
 
+  /*eventually, we want our box to load a random quote on first load*/
+  componentDidMount() {
+
+  }
+
+
+
+
   render() {
   	return (
   	  <div id='quote-box'>
