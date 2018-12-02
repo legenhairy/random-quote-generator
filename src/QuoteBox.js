@@ -16,7 +16,9 @@ class QuoteBox extends Component {
 
   /*when someone clicks on the new qipte button, */
 
-
+  grabNewQuote = () => {
+    
+  }
 
   render() {
   	return (
