@@ -3,10 +3,10 @@ import './QuoteBox.css';
 
 class QuoteBox extends Component {
   constructor(){
-	super();
-	this.state = {
+	 super();
+	 this.state = {
 
-	}
+	 }
   }
 
   /*eventually, we want our box to load a random quote on first load*/
@@ -14,6 +14,7 @@ class QuoteBox extends Component {
 
   }
 
+  /*when someone clicks on the new qipte button, */
 
 
 
@@ -27,8 +28,8 @@ class QuoteBox extends Component {
   	  		<span></span>
   	  		Harry Zhang 
   	  	</div>
-  	  	<button className ='tweet-button' type='button' title="Tweet this quote!">
-  	  	Tweet this quote!
+  	  	<button className ='newquote' type='button' title="Grab a new quote!">
+  	  	Grab new quote! 
   	  	</button>
 
   	  </div>

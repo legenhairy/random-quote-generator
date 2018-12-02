@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <QuoteBox className='quote-box' />
           
-
+        
       </div>
     );
   }
