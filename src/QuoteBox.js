@@ -5,19 +5,20 @@ class QuoteBox extends Component {
   constructor(){
 	 super();
 	 this.state = {
-
+    quotes: [],
+    index: null
 	 }
   }
 
   /*eventually, we want our box to load a random quote on first load*/
   componentDidMount() {
-
+    
   }
 
-  /*when someone clicks on the new qipte button, */
+  /*when someone clicks on the new qipte button, we want to display a new quote */
 
-  grabNewQuote = () => {
-    
+  grabNewQuote = (event) => {
+    console.log('Click click');
   }
 
   render() {
@@ -30,21 +31,14 @@ class QuoteBox extends Component {
   	  		<span></span>
   	  		Harry Zhang 
   	  	</div>
-  	  	<button className ='newquote' type='button' title="Grab a new quote!">
+  	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
   	  	Grab new quote! 
   	  	</button>
 
   	  </div>
 
   	);
-
-
-
-
-
   }
-
-
 }
 
 export default QuoteBox;
