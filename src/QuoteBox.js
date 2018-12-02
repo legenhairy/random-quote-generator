@@ -6,19 +6,21 @@ class QuoteBox extends Component {
 	 super();
 	 this.state = {
     quotes: [],
-    index: null
+    index: null,
+    author: ''
 	 }
   }
 
-  /*eventually, we want our box to load a random quote on first load*/
+  /*eventually, we want our box to load a random quote and its author on first load*/
   componentDidMount() {
-    
+    this.setState({author: 'Harry Zhang'});
   }
 
   /*when someone clicks on the new qipte button, we want to display a new quote */
 
   grabNewQuote = (event) => {
     console.log('Click click');
+  
   }
 
   render() {
@@ -29,7 +31,7 @@ class QuoteBox extends Component {
   	  	</div>
   	  	<div id='author'>
   	  		<span></span>
-  	  		Harry Zhang 
+  	  		{this.state.author}
   	  	</div>
   	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
   	  	Grab new quote! 
