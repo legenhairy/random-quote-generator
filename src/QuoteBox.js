@@ -19,7 +19,7 @@ class QuoteBox extends Component {
   /*when someone clicks on the new qipte button, we want to display a new quote */
 
   grabNewQuote = (event) => {
-    console.log('Click click');
+    console.log('Click here for a new quote');
   
   }
 
@@ -36,7 +36,7 @@ class QuoteBox extends Component {
   	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
   	  	Grab new quote! 
   	  	</button>
-
+        <a href=''/>
   	  </div>
 
   	);
