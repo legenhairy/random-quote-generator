@@ -20,7 +20,9 @@ class QuoteBox extends Component {
 
   grabNewQuote = (event) => {
     console.log('Click here for a new quote');
-  
+    fetch('https://talaikis.com/api/quotes/random/')
+      .then(response => response.json())
+      .then(quotes => console.log(quotes));
   }
 
   render() {
