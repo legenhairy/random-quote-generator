@@ -5,7 +5,7 @@ class QuoteBox extends Component {
   constructor(){
 	 super();
 	 this.state = {
-    quote: '',
+    quote: {},
     index: null,
     author: ''
 	 }
@@ -23,20 +23,20 @@ class QuoteBox extends Component {
     console.log('Click here for a new quote');
     fetch('https://talaikis.com/api/quotes/random/')
       .then(response => response.json())
-      .then(quote => this.setState({ quote: quote.quote }));
+      .then(quote => console.log(quote));
   }
 
   render() {
   	return (
   	  <div id='quote-box'>
   	  	<div className='text-field' id='text'>
-  	  		{this.state.quote}
+  	  		Placeholder for now
   	  	</div>
   	  	<div id='author'>
   	  		<span>{this.state.author}</span>
   	  	</div>
   	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
-  	  	Grab new quote! 
+  	  	Click me for a new quote! 
   	  	</button>
         <a href=''/>
   	  </div>
