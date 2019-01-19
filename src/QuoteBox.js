@@ -12,8 +12,9 @@ class QuoteBox extends Component {
   }
 
   /*eventually, we want our box to load a random quote and its author on first load*/
+  /*every time we initially render quote box, have the quote empty*/
   componentDidMount() {
-    this.setState({author: 'Harry Zhang'});
+    this.setState({author: 'Harry Zhang', quote: ''});
     this.grabNewQuote();
   }
 
@@ -35,9 +36,7 @@ class QuoteBox extends Component {
   	  	<div id='author'>
   	  		<span>{this.state.author}</span>
   	  	</div>
-  	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
-  	  	Click me to get a random quote!
-  	  	</button>
+  	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}> Click me to get a random quote!</button>
         <a href='#placeholder'/>
   	  </div>
 
