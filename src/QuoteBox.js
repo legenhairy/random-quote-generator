@@ -38,7 +38,7 @@ class QuoteBox extends Component {
   	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
   	  	Click me for a new quote! 
   	  	</button>
-        <a href=''/>
+        <a href='#placeholder'/>
   	  </div>
 
   	);
