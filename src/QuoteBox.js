@@ -20,7 +20,7 @@ class QuoteBox extends Component {
   /*when someone clicks on the new qipte button, we want to display a new quote */
   /*accessing the quote inside returned json object*/
   grabNewQuote = (event) => {
-    console.log('Click here for a new quote');
+    console.log('Click here for a random new quote');
     fetch('https://talaikis.com/api/quotes/random/')
       .then(response => response.json())
       .then(quote => console.log(quote));
@@ -36,7 +36,7 @@ class QuoteBox extends Component {
   	  		<span>{this.state.author}</span>
   	  	</div>
   	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}>
-  	  	Click me for a new quote! 
+  	  	Click me to get a random quote!
   	  	</button>
         <a href='#placeholder'/>
   	  </div>
