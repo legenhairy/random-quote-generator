@@ -5,9 +5,10 @@ class QuoteBox extends Component {
   constructor(){
 	 super();
 	 this.state = {
-    quote: {},
-    index: null,
-    author: ''
+    quote: {
+      content: '',
+      author: ''
+    },
 	 }
   }
 
@@ -22,11 +23,13 @@ class QuoteBox extends Component {
   /*accessing the quote inside returned json object*/
   grabNewQuote = (event) => {
     console.log('Click here for a random new quote');
+    /*
     fetch('https://talaikis.com/api/quotes/random/')
       .then(response => response.json())
       .then(quote => {
         console.log(quote)
       });
+    */
   }
 
   render() {
