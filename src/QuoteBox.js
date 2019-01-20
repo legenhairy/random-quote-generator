@@ -24,7 +24,9 @@ class QuoteBox extends Component {
     console.log('Click here for a random new quote');
     fetch('https://talaikis.com/api/quotes/random/')
       .then(response => response.json())
-      .then(quote => console.log(quote));
+      .then(quote => {
+        console.log(quote)
+      });
   }
 
   render() {
