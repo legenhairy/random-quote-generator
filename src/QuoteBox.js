@@ -33,13 +33,14 @@ class QuoteBox extends Component {
   }
 
   render() {
-  	return (
+  	const { quote } = this.state;
+    return (
   	  <div id='quote-box'>
   	  	<div className='text-field' id='text'>
   	  		Placeholder for now
   	  	</div>
   	  	<div id='author'>
-  	  		<span>{this.state.author}</span>
+  	  		<span>{quote.author}</span>
   	  	</div>
   	  	<button className ='newquote' type='button' onClick= {this.grabNewQuote}> Click me to get a random quote!</button>
         <a href='#placeholder'/>
